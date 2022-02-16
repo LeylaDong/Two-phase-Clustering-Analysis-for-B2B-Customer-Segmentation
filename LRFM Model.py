@@ -110,6 +110,44 @@ main_df.info()
 
 
 
+# outlier treatment if needed
+
+plt.boxplot(main_df.Length)
+# Q1 = main_df.Length.quantile(0.25)
+# Q3 = main_df.Length.quantile(0.75)
+# IQR = Q3 - Q1
+# main_df = main_df[(main_df.Length >= (Q1 - 1.5*IQR)) & (main_df.Length <= (Q3 + 1.5*IQR))]
+# plt.boxplot(main_df.Length)
+
+
+plt.boxplot(main_df.Recency)
+# Q1 = main_df.Recency.quantile(0.25)
+# Q3 = main_df.Recency.quantile(0.75)
+# IQR = Q3 - Q1
+# main_df = main_df[(main_df.Recency >= (Q1 - 1.5*IQR)) & (main_df.Recency <= (Q3 + 1.5*IQR))]
+# plt.boxplot(main_df.Recency)
+
+# In[12]:
+
+
+plt.boxplot(main_df.Frequency)
+# Q1 = main_df.Frequency.quantile(0.25)
+# Q3 = main_df.Frequency.quantile(0.75)
+# IQR = Q3 - Q1
+# main_df = main_df[(main_df.Frequency >= (Q1 - 1.5*IQR)) & (main_df.Frequency <= (Q3 + 1.5*IQR))]
+# plt.boxplot(main_df.Frequency)
+
+plt.boxplot(main_df.Monetary)
+# Q1 = main_df.Monetary.quantile(0.25)
+# Q3 = main_df.Monetary.quantile(0.75)
+# IQR = Q3 - Q1
+# main_df = main_df[(main_df.Monetary >= (Q1 - 1.5*IQR)) & (main_df.Monetary <= (Q3 + 1.5*IQR))]
+# plt.boxplot(main_df.Monetary)
+
+
+# main_df.head()
+
+
 
 
 
